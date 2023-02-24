@@ -3,9 +3,10 @@
     border-radius: 10rem;
     border: 0.1rem solid white;
     width: 20.83vw;
-    padding: 1.3vw 3vw;
+    padding: 1.3vw 3vw 1.3vw 1.7vw;
     color: white;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     transition: background-color 0.2s;
 }

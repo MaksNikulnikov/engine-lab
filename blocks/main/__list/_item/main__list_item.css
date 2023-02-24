@@ -1,0 +1,24 @@
+.main__list_item {
+    font-weight: 300;
+    letter-spacing: 0.12rem;
+    font-size: 1.1rem;
+    line-height: 1.65rem;
+    color: white;
+    border-left: rgb(256, 256, 256, 64) solid 0.1rem;
+    padding: 0 4.95vw 2.3vw 4.95vw;
+}
+
+.main__list_item b {
+    font-weight: 800;
+}
+
+.main__list_item:first-child{
+    border: none;
+    margin-left: 3vw;
+    padding-left: 3vw;
+    width: 26vw;
+}
+
+.main__list_item:nth-child(2){
+    width: 26vw;
+}

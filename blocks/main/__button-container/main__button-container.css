@@ -1,6 +1,6 @@
 .main__button-container{
     display: flex;
     justify-content: space-between;
-    margin: 1.7vw 0 0 5.99vw;
+    margin: 1.7vw 0 6.7vw 5.99vw;
     max-width: 42.8125vw;
 }

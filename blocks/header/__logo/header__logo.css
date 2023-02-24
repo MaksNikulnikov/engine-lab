@@ -1,3 +1,7 @@
 .header__logo{
     width: 11vw;
 }
+
+.header__logo:hover{
+    box-shadow: 0.2rem 0.2rem 0.2rem slategray;
+}

@@ -23,6 +23,10 @@
 @import url(../blocks/main/__button-check/_text/main__button-check_text.css);
 @import url(../blocks/main/__button-check/_img/main__button-check_img.css);
 @import url(../blocks/main/__button-whatsapp/main__button-whatsapp.css);
+@import url(../blocks/main/__button-whatsapp/_text/main__button-whatsapp_text.css);
+@import url(../blocks/main/__list/main__list.css);
+@import url(../blocks/main/__list/_item/main__list_item.css);
+@import url(../blocks/main/__list/_v/main__list_v.css);
 @import url(../blocks/blick/blick.css);
 @import url(../blocks/root/root.css);
 
