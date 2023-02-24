@@ -1,0 +1,7 @@
+.header__call-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2.97vw;
+    text-align: center;
+}

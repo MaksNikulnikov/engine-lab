@@ -1,0 +1,27 @@
+.header__nav_item{
+    margin-right: 4.3vw;
+}
+
+.header__nav_item:nth-child(2){
+    margin-right: 4.5vw;
+}
+
+.header__nav_item:nth-child(3){
+    margin-right: 5.5vw;
+}
+
+.header__nav_item:nth-child(5){
+    margin-right: 4.6vw;
+}
+
+.header__nav_item:nth-child(6){
+    margin-right: 5.3vw;
+}
+
+.header__nav_item:nth-child(7){
+    margin-right: 5.3vw;
+}
+
+.header__nav_item:nth-child(8){
+    margin-right: 5.4vw;
+}

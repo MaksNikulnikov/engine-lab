@@ -1,0 +1,38 @@
+.blick{
+    position: relative;
+    overflow: hidden;
+}
+
+.blick:after {
+  content: "";
+  display: block;
+  width: 4vw;
+  height: 25vw;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.05) 2%,
+      rgba(255, 255, 255, 0.8) 27%,
+      rgba(255, 255, 255, 0.2) 50%
+  );
+  left: -30vw;
+  top: -10vw;
+  z-index: 1;
+  transform: rotate(40deg);
+  position: absolute;
+  animation: movingFlare 3s ease-in-out 0.05s infinite;
+}
+ 
+@keyframes movingFlare {
+  0% {
+    left: 0;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 20vw;
+  }
+  100% {
+    left: 110%;
+    margin-left: 20vw;
+  }
+}

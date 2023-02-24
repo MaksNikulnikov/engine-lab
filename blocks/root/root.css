@@ -1,0 +1,6 @@
+.root {
+    margin-left: 7.3vw;
+    font-family: 'Manrope', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}

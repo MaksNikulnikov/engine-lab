@@ -1,0 +1,9 @@
+.main__subtitle{
+    font-weight: 400;
+    letter-spacing: 0.075rem;
+    font-size: 2rem;
+    line-height: 5rem;
+    margin: 1.2vw 0 0 5.99vw;
+    max-width: 52.65625vw;
+    color: white;
+}

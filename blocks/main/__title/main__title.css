@@ -1,0 +1,13 @@
+.main__title{
+    font-weight: 400;
+    letter-spacing: 0.06rem;
+    font-size: 5rem;
+    line-height: 6.7rem;
+    margin: 6.666vw 0 0 5.99vw;
+    max-width: 52.65625vw;
+    color: white;
+}
+
+.main__title b{
+    font-weight: 700;
+}

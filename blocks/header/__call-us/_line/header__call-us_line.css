@@ -1,0 +1,25 @@
+.header__call-us_line{
+    margin-bottom: 0.62vw;
+}
+
+.header__call-us_line:nth-child(1) {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 0.65rem;
+    letter-spacing: 0.02rem;
+    position: relative;
+}
+
+.header__call-us_line:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 0.75rem;
+}
+
+.header__call-us_line:nth-child(3) {
+    font-size: 0.78rem;
+    font-weight: 400;
+    line-height: 0.75rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0;
+}

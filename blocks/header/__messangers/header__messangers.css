@@ -1,0 +1,6 @@
+.header__messangers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2.97vw;
+}
