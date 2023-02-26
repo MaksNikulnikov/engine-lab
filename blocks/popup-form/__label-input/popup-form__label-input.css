@@ -1,0 +1,11 @@
+.popup-form__label-input {
+    font-size: 1.28571428rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin: 0 0 1vw 1vw;
+}
+
+.popup-form__label-input a{
+    color: #cb2720;
+    font-size: 1.1rem;
+}

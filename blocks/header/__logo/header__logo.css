@@ -1,7 +1,9 @@
 .header__logo{
     width: 11vw;
+    translate: all 0.2s;
 }
 
 .header__logo:hover{
-    box-shadow: 0.2rem 0.2rem 0.2rem slategray;
+    box-shadow: 0.05rem 0.05rem 0.05rem slategray;
+    transform: scale(1.05);
 }

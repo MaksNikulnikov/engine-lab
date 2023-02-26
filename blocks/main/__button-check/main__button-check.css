@@ -1,5 +1,5 @@
 .main__button-check{
-    background-color: #FD2016;
+    background-color: #cb2720;
     border-radius: 10rem;
     border: 0;
     width: 20.83vw;
@@ -8,9 +8,9 @@
     display: flex;
     justify-content: space-between;
     transition: background-color 0.2s;
+    cursor: pointer;
 }
 
 .main__button-check:hover{
-    background-color: #ad1d15;
-    cursor: pointer;
+    background-color: #FD2016;
 }

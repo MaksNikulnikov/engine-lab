@@ -29,6 +29,19 @@
 @import url(../blocks/main/__list/_v/main__list_v.css);
 @import url(../blocks/blick/blick.css);
 @import url(../blocks/root/root.css);
+@import url(../blocks/animated-by-dots/animated-by-dots.css);
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__btn-close/popup__btn-close.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup-form/popup-form.css);
+@import url(../blocks/popup-form/__title/popup-form__title.css);
+@import url(../blocks/popup-form/__subtitle/popup-form__subtitle.css);
+@import url(../blocks/popup-form/__input-phone/popup-form__input-phone.css);
+@import url(../blocks/popup-form/__label-input/popup-form__label-input.css);
+@import url(../blocks/vertical-container/vertical-container.css);
+@import url(../blocks/popup-form/__submit/popup-form__submit.css); 
+@import url(../blocks/popup-form/__check-box/popup-form__check-box.css);
+    
 
 html{
     font-size: calc(100vw / 1920 * 14);

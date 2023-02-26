@@ -6,5 +6,8 @@
     font-weight: 600;
     line-height: 0.75rem;
     letter-spacing: 0.19rem;
+}
 
+.header__nav_link:hover{
+    color: #cb2720;
 }

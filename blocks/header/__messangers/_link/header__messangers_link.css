@@ -1,4 +1,8 @@
 .header__messangers_link{
-
     margin-right: 0.3125vw;
+    translate: transform 0.2s;
+}
+
+.header__messangers_link:hover{
+    transform: scale(1.2);
 }

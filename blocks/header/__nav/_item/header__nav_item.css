@@ -1,6 +1,6 @@
 .header__nav_item{
     margin-right: 4.3vw;
-    transition: text-decoration-line 0.2s;
+    transition: color 0.2s;
 }
 
 .header__nav_item:nth-child(2){
@@ -25,8 +25,4 @@
 
 .header__nav_item:nth-child(8){
     margin-right: 5.4vw;
-}
-
-.header__nav_item:hover{
-    text-decoration: underline gray 0.2rem;
 }

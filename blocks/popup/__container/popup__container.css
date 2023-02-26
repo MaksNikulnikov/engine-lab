@@ -1,0 +1,12 @@
+.popup__container{
+    width: 26.04166vw;
+    height: 31.25vw;
+    position: absolute;
+    background-color: #1f1a17;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%); 
+    padding-top: 2.34375vw;
+    padding-bottom: 3.90625vw;
+}

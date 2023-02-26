@@ -1,0 +1,23 @@
+.popup-form__submit{
+    border-radius: 10rem;
+    border: 0.1rem solid white;
+    background-color: #cb2720;
+    width: 19.947916vw;
+    padding: 1.3vw 3vw 1.3vw 1.7vw;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: white;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.popup-form__submit:hover{
+    background-color: #FD2016;
+}
+
+.popup-form__submit:disabled{
+    background-color: gray;
+    cursor: auto;
+}

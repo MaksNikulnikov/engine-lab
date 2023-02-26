@@ -6,13 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
+    <script src="./index.js" defer></script>
     <title>Лаборатория двигателей</title>
 </head>
 
 <body class="root">
     <header class="header">
         <div class="header__container">
-            <a href="#">
+            <a href="/">
                 <img src="./images/Логотип.svg" alt="Лаборатория двигателей" class="header__logo">
             </a>
             <ul class="header__upper-menu">
@@ -28,12 +29,14 @@
                 <li class="header__upper-menu_item">
                     <img src="./images/смотреть на карте.svg" alt="Смотреть на карте"
                         class="header__upper-menu_small-icon">
-                    <span>Смотреть на карте </span>
+                    <span class="animated-by-dots">Смотреть на карте </span>
                 </li>
                 <li class="header__upper-menu_item">
                     <img src="./images/калькулятор.svg" alt="Иконка калькулятор" class="header__upper-menu_icon">
-                    <span>Рассчитать стоимость
-                        ремонта за 45 сек</span>
+                    <div>
+                        <span class="animated-by-dots">Рассчитать стоимость</span>
+                        <span class="animated-by-dots">ремонта за 45 сек</span>
+                    </div>
                 </li>
             </ul>
             <div class="header__messangers">
@@ -44,9 +47,12 @@
                 <a class="header__messangers_link" href="#"><img src="./images/Viber.svg" alt="Вайбер"></a>
             </div>
             <div class="header__call-us">
-                <span class="header__call-us_line"><img src="./images/greenCircle.svg" alt="зеленый круг"> Звоните Пн-Сб 10:00 - 21:00</span>
-                <span class="header__call-us_line">+7 (925) 103 33 30 <img src="./images/Стрелкк.svg" alt="иконка V"></span>
-                <span class="header__call-us_line">Заказать звонок  <img src="./images/redPhone.svg" alt="иконка телефон"></span>
+                <span class="header__call-us_line"><img src="./images/greenCircle.svg" alt="зеленый круг"> Звоните Пн-Сб
+                    10:00 - 21:00</span>
+                <span class="header__call-us_line">+7 (925) 103 33 30 <img src="./images/Стрелкк.svg"
+                        alt="иконка V"></span>
+                <span class="header__call-us_line animated-by-dots">Заказать звонок <img src="./images/redPhone.svg"
+                        alt="иконка телефон"></span>
             </div>
 
         </div>
@@ -76,16 +82,37 @@
                     class="main__button-whatsapp_text">Узнайте&nbspстоимость&nbspпо&nbspWhatsApp</span></button>
         </div>
         <ul class="main__list">
-            <li class="main__list_item"><img class="main__list_v" src="./images/redV.svg" alt="красная галочка"><b>Без предоплаты.</b> Оплата после ремонта</li>
-            <li class="main__list_item"><img class="main__list_v" src="./images/redV.svg" alt="красная галочка"><b>Работаем официально</b> с оформлением заказ-нарядов и чеков</li>
-            <li class="main__list_item"><img class="main__list_v" src="./images/redV.svg" alt="красная галочка"><b>Оригинальные запчасти</b></li>
-            <li class="main__list_item"><img class="main__list_v" src="./images/redV.svg" alt="красная галочка"><b>Лучшие цены на рынке</b> благодаря прямым поставкам запчастей и собственному
+            <li class="main__list_item"><img class="main__list_v" src="./images/redV.svg" alt="красная галочка"><b>Без
+                    предоплаты.</b> Оплата после ремонта</li>
+            <li class="main__list_item"><img class="main__list_v" src="./images/redV.svg"
+                    alt="красная галочка"><b>Работаем официально</b> с оформлением заказ-нарядов и чеков</li>
+            <li class="main__list_item"><img class="main__list_v" src="./images/redV.svg"
+                    alt="красная галочка"><b>Оригинальные запчасти</b></li>
+            <li class="main__list_item"><img class="main__list_v" src="./images/redV.svg"
+                    alt="красная галочка"><b>Лучшие цены на рынке</b> благодаря прямым поставкам запчастей и
+                собственному
                 цеху механической обработки</li>
         </ul>
     </main>
-    <footer class="footer vertical-column">
-
-    </footer>
+    <section class="popup">
+        <div class="popup__container">
+            <div class="popup__btn-close"><img src="./images/Stroke.svg" alt="кнопка крест"></div>
+            <form name="quickOrder " action="" method="get" class="popup-form">
+                <h1 class="popup-form__title">Быстро оставить заявку</h1>
+                <p class="popup-form__subtitle">Введите номер - позвоним вам в течение 5-10 минут в рабочее время</p>
+                <div class="vertical-container">
+                    <label class="popup-form__label-input" for="phoneNumber">Введите ваш номер телефона</label>
+                    <input type="tel" maxlength="16" placeholder="+7(___)___-__-__" class="popup-form__input-phone">
+                </div>
+                <button type="submit" class="popup-form__submit blick">Перезвоните мне</button>
+                <label for="checkBox" class="popup-form__label-input">
+                    <input type="checkbox" class="popup-form__check-box"> Нажимая кнопку вы соглашаетесь с условиями
+                    </input>
+                    <a href="#">Политики конфиденциальности</a>
+                </label>
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>

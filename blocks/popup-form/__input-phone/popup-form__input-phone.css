@@ -1,0 +1,9 @@
+.popup-form__input-phone{
+    border-radius: 10rem;
+    border: 0.1rem solid#cb2720;
+    width: 19.947916vw;
+    height: 4.1vw;
+    padding: 0.3vw 1.7vw;
+    box-sizing: border-box;
+    font-size: 2.2rem;
+}
