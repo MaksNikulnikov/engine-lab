@@ -1,47 +1,52 @@
-const checkbox = document.querySelector('.popup-form__check-box');
-const submitButton = document.querySelector('.popup-form__submit');
-const phone = document.querySelector('.popup-form__input-phone');
+const form = document.forms[0];
+const checkbox = form.querySelector('.popup-form__check-box');
+const submitBtn = form.querySelector('.popup-form__submit');
+const phoneInput = form.querySelector('.popup-form__input-phone');
+const popupPhone = document.querySelector('.popup');
+const closeBtn = popupPhone.querySelector('.popup__btn-close');
+const openBtnPhonePopup = document.querySelector('.main__button-check');
+const blickedElements = document.querySelectorAll('.blick');
+const phoneMask = new IMask(phoneInput, {
+    mask: "+{7}(000)000-00-00",
+});
 
-let isNumberValid = false;
-let isChecked = true;
-function inputPhone(e, phone) {
+phoneInput.addEventListener("input", phoneInputHandler);
+submitBtn.addEventListener("click", btnHandler);
+checkbox.addEventListener("change", phoneInputHandler);
+closeBtn.addEventListener("click", closePopup);
+openBtnPhonePopup.addEventListener("click",()=>{
+    openPopup(popupPhone);
+})
 
-    function stop(evt) {
-        evt.preventDefault();
-    }
-    let key = e.key, v = phone.value; not = key.replace(/([0-9])/, 1)
-
-    if (not == 1 || 'Backspace' === not) {
-        if ('Backspace' != not) {
-            if (v.length < 3 || v === '') { phone.value = '+7(' }
-            if (v.length === 6) { phone.value = v + ')' }
-            if (v.length === 10) { phone.value = v + '-' }
-            if (v.length === 13) { phone.value = v + '-' }
-        }
-    } else { stop(e) }
-    console.log('v.length', v.length);
-    if (v.length >= 15) {
-        console.log('<< true >>')
-        isNumberValid = true;
+function phoneInputHandler() {
+    if (phoneMask.masked.isComplete && checkbox.checked) {
+        submitBtn.classList.remove("popup-form__submit_disabled" );
+        submitBtn.classList.add("blick");
     } else {
-        console.log('<<false>>')
-        isNumberValid = false;
-    }
-    checkFormValidity();
-}
-
-const checkFormValidity = function () {
-    console.log(isNumberValid, isChecked)
-    if (isNumberValid && isChecked){
-        submitButton.removeAttribute('disabled');
-    } else {
-        submitButton.setAttribute('disabled', true);
+        submitBtn.classList.add("popup-form__submit_disabled");
+        submitBtn.classList.remove("blick");
     }
 }
 
-phone.onkeydown = function (e) {
-    inputPhone(e, phone);
+function btnHandler(e) {
+    e.preventDefault();
+    closePopup();
+    window.alert('Телефон отправлен!');
 }
 
-checkFormValidity();
+function closePopup(){
+    toddleBlickedElements();
+    form.reset();
+    popupPhone.classList.add('no-displayed');
+    phoneMask.updateValue();
+}
 
+function openPopup(popup){
+    toddleBlickedElements();
+    popup.classList.remove('no-displayed');
+    phoneInputHandler();
+}
+
+function toddleBlickedElements(){
+    blickedElements.forEach(el=>el.classList.toggle('blick'));
+}

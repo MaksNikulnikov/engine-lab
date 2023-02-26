@@ -4,6 +4,11 @@
     right: 1.927083vw;
     width: 1.0417vw;
     height: 1.0417vw;
-    transform-origin: right
-    ;
+    transform-origin: right;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.popup__btn-close:hover{
+    transform: scale(1.2);
 }

@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <script src="./index.js" defer></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script type="module" src="./index.js" defer></script>
     <title>Лаборатория двигателей</title>
 </head>
 
@@ -94,17 +95,21 @@
                 цеху механической обработки</li>
         </ul>
     </main>
-    <section class="popup">
+    <section class="popup no-displayed">
         <div class="popup__container">
             <div class="popup__btn-close"><img src="./images/Stroke.svg" alt="кнопка крест"></div>
             <form name="quickOrder " action="" method="get" class="popup-form">
                 <h1 class="popup-form__title">Быстро оставить заявку</h1>
                 <p class="popup-form__subtitle">Введите номер - позвоним вам в течение 5-10 минут в рабочее время</p>
                 <div class="vertical-container">
-                    <label class="popup-form__label-input" for="phoneNumber">Введите ваш номер телефона</label>
-                    <input type="tel" maxlength="16" placeholder="+7(___)___-__-__" class="popup-form__input-phone">
+                    <label class="popup-form__label-input" for="phone">Введите ваш номер телефона</label>
+                    <input type="tel" 
+                    maxlength="16" 
+                    placeholder="+7(___)___-__-__"
+                    name="phone"
+                    class="popup-form__input-phone">
                 </div>
-                <button type="submit" class="popup-form__submit blick">Перезвоните мне</button>
+                <button type="submit" class="popup-form__submit popup-form__submit_disabled">Перезвоните мне</button>
                 <label for="checkBox" class="popup-form__label-input">
                     <input type="checkbox" class="popup-form__check-box"> Нажимая кнопку вы соглашаетесь с условиями
                     </input>

@@ -41,8 +41,8 @@
 @import url(../blocks/vertical-container/vertical-container.css);
 @import url(../blocks/popup-form/__submit/popup-form__submit.css); 
 @import url(../blocks/popup-form/__check-box/popup-form__check-box.css);
-    
-
+@import url(../blocks/popup-form/__submit/_disabled/popup-form__submit_disabled.css);    
+@import url(../blocks/no-displayed/no-displayed.css);
 html{
     font-size: calc(100vw / 1920 * 14);
 }

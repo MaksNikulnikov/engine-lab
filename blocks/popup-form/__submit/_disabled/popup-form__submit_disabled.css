@@ -1,0 +1,5 @@
+.popup-form__submit_disabled{
+    background-color: gray;
+    cursor: auto;
+    pointer-events: none;
+}
